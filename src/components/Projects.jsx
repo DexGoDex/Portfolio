@@ -1,75 +1,138 @@
+import kwikApp from "../assets/kwikApp.png";
+import InventoryManagementSystem from "../assets/inventoryManagementSystem.png";
+import VocalLaVida from "../assets/vocalLaVida.png";
+
 function Projects() {
+  const projects = [
+    {
+      
+      type: "MOBILE APPLICATION",
+      title: "UMKM Kue Basah Bu Wiwik",
+      description:
+        "An Android application designed to simplify product ordering and support the digital sales process of a local food business.",
+      details:
+        "The application allows customers to browse products, place orders, schedule pickups, and make digital payments.",
+      technologies: [
+        "Flutter",
+        "Firebase",
+        "Supabase",
+        "REST API",
+        "Tripay",
+        "Figma",
+      ],
+      image: kwikApp,
+    },
+
+    {
+  type: "WEB APPLICATION",
+  title: "Inventory Management System",
+  description:
+    "A web-based inventory system for managing incoming and outgoing goods.",
+  details:
+    "Built to record inventory transactions, manage item data, display tabular records, and provide inventory insights through charts.",
+  technologies: [
+    "CodeIgniter 3",
+    "PHP",
+    "Mysql",
+    "Bootstrap 4",
+    "SB Admin 2",
+    "DataTables",
+    "Chart.js",
+  ],
+  image: InventoryManagementSystem,
+},
+    {
+  type: "MOBILE APPLICATION",
+  title: "Vocal La Vida",
+  description:
+    "A mobile quiz application developed to provide an interactive and engaging quiz experience.",
+  details:
+    "The application allows users to answer quiz questions, view results, and manage quiz data using Firebase.",
+  technologies: [
+    "Flutter",
+    "Dart",
+    "Firebase",
+  ],
+  image: VocalLaVida,
+},
+  ];
+
   return (
-    <section className="section section-alt" id="projects">
+    <section className="section projects-section" id="projects">
       <div className="container">
-        <p className="section-label">PROJECTS</p>
 
-        <h2 className="section-title">Selected work</h2>
+        <div className="projects-heading">
+          <p className="section-label">PROJECTS</p>
 
-        <div className="projects-grid">
-          <article className="project-card featured">
-            <div className="project-number">01</div>
+          <h2 className="section-title">
+            Selected
+            <br />
+            <span>work.</span>
+          </h2>
 
-            <div className="project-content">
-              <p className="project-type">MOBILE APPLICATION</p>
-
-              <h3>
-                Aplikasi Mobile UMKM Kue Basah Bu Wiwik
-              </h3>
-
-              <p>
-                Aplikasi mobile berbasis Flutter yang dikembangkan untuk
-                membantu optimalisasi pemasaran dan proses pemesanan
-                produk UMKM Kue Basah Bu Wiwik.
-              </p>
-
-              <div className="project-tags">
-                <span>Flutter</span>
-                <span>Firebase</span>
-                <span>Supabase</span>
-                <span>REST API</span>
-                <span>Tripay</span>
-                <span>Figma</span>
-              </div>
-
-              <p className="project-details">
-                Features include product ordering, pickup scheduling,
-                authentication, database integration, and digital
-                payment integration using Tripay.
-              </p>
-
-              <a
-                href="#contact"
-                className="project-link"
-              >
-                Discuss Project →
-              </a>
-            </div>
-          </article>
-
-          <article className="project-card">
-            <div className="project-number">02</div>
-
-            <div className="project-content">
-              <p className="project-type">WEB DEVELOPMENT</p>
-
-              <h3>Personal Portfolio Website</h3>
-
-              <p>
-                A responsive personal portfolio website built with
-                React to showcase development experience, skills,
-                education, and projects.
-              </p>
-
-              <div className="project-tags">
-                <span>React</span>
-                <span>JavaScript</span>
-                <span>CSS</span>
-                <span>Vite</span>
-              </div>
-            </div>
-          </article>
+          <p className="projects-intro">
+            A selection of projects I've worked on, from mobile
+            applications to web development.
+          </p>
         </div>
+
+        <div className="projects-list">
+          {projects.map((project) => (
+            <article className="project" key={project.number}>
+
+              {/* IMAGE */}
+              <div className="project-image-wrapper">
+                <div className="project-image">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                  />
+                </div>
+
+                <span className="project-number">
+                  {project.number}
+                </span>
+              </div>
+
+              {/* CONTENT */}
+              <div className="project-info">
+
+                <p className="project-type">
+                  {project.type}
+                </p>
+
+                <h3>{project.title}</h3>
+
+                <p className="project-description">
+                  {project.description}
+                </p>
+
+                <p className="project-details">
+                  {project.details}
+                </p>
+
+                <div className="project-tags">
+                  {project.technologies.map((technology) => (
+                    <span key={technology}>
+                      {technology}
+                    </span>
+                  ))}
+                </div>
+
+                <a
+                  href="#contact"
+                  className="project-link"
+                >
+                  Discuss Project
+                  <span>↗</span>
+                </a>
+
+              </div>
+
+            </article>
+          ))}
+        </div>
+
       </div>
     </section>
   );

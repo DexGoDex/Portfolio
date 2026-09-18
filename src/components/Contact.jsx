@@ -15,12 +15,12 @@ function Contact() {
         </p>
 
         <div className="contact-links">
-          <a href="mailto:your-email@example.com">
+          <a href="mailto:amirsyawalwork@gmail.com">
             Email
           </a>
 
           <a
-            href="https://github.com/"
+            href="https://github.com/DexGoDex"
             target="_blank"
             rel="noreferrer"
           >
@@ -28,7 +28,7 @@ function Contact() {
           </a>
 
           <a
-            href="https://www.linkedin.com/"
+            href="www.linkedin.com/in/amirsyawaludin"
             target="_blank"
             rel="noreferrer"
           >

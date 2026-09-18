@@ -7,6 +7,8 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
+import Education from "./components/Education";
+import Certifications from "./components/Certifications";
 
 function App() {
   return (
@@ -16,9 +18,11 @@ function App() {
       <main>
         <Hero />
         <About />
+        <Education />
         <Skills />
         <Projects />
         <Experience />
+        <Certifications />
         <Contact />
       </main>
 
