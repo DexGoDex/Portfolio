@@ -10,6 +10,7 @@ import Contact from "./components/Contact";
 import Education from "./components/Education";
 import Certifications from "./components/Certifications";
 
+
 function App() {
   return (
     <>
