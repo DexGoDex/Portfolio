@@ -23,13 +23,7 @@ function Hero() {
           </a>
         </div>
 
-        <div className="hero-tech">
-          <span>Flutter</span>
-          <span>React</span>
-          <span>Firebase</span>
-          <span>Supabase</span>
-          <span>Figma</span>
-        </div>
+      
       </div>
     </section>
   );
