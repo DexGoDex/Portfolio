@@ -1,3 +1,4 @@
+
 function Contact() {
   return (
     <section className="section contact-section" id="contact">
@@ -28,7 +29,7 @@ function Contact() {
           </a>
 
           <a
-            href="www.linkedin.com/in/amirsyawaludin"
+            href="https://www.linkedin.com/in/amirsyawaludin"
             target="_blank"
             rel="noreferrer"
           >

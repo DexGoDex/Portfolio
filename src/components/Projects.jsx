@@ -5,7 +5,7 @@ import VocalLavida from "../assets/VocalLavida.png";
 function Projects() {
   const projects = [
     {
-      number: "01",
+      
       type: "MOBILE APPLICATION",
       title: "UMKM Kue Basah Bu Wiwik",
       description:
@@ -24,7 +24,7 @@ function Projects() {
     },
 
     {
-      number: "02",
+      
       type: "WEB APPLICATION",
       title: "Inventory Management System",
       description:
@@ -44,7 +44,7 @@ function Projects() {
     },
 
     {
-      number: "03",
+      
       type: "MOBILE APPLICATION",
       title: "Vocal La Vida",
       description:

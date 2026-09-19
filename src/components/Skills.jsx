@@ -1,53 +1,93 @@
+import {
+  SiFlutter,
+  SiDart,
+  SiOpenjdk,
+  SiKotlin,
+  SiPython,
+  SiHtml5,
+  SiCss,
+  SiPhp,
+  SiJavascript,
+  SiReact,
+  SiMysql,
+  SiFirebase,
+  SiGit,
+  SiGithub,
+  SiFigma,
+  SiGoogle,
+  SiLinux,
+  SiNginx,
+  SiSupabase,
+} from "react-icons/si";
+
+import {
+  FaNetworkWired,
+  FaMicrosoft,
+  FaServer,
+  FaWindows,
+} from "react-icons/fa";
+
 function Skills() {
   const categories = [
     {
-  
+      number: "01",
       title: "Development",
-      description: "Building modern applications and digital experiences.",
+      description:
+        "Languages and frameworks I use to build applications and digital experiences.",
       skills: [
-        { name: "Flutter", icon: "📱" },
-        { name: "Dart", icon: "🎯" },
-        { name: "Java", icon: "☕" },
-        { name: "Kotlin", icon: "K" },
-        { name: "Python", icon: "🐍" },
-        { name: "HTML", icon: "🌐" },
-        { name: "CSS", icon: "🎨" },
-        { name: "PHP", icon: "🐘" },
-        { name: "JavaScript", icon: "🟨" },
-        { name: "React", icon: "⚛" },
+        { name: "Flutter", icon: <SiFlutter /> },
+        { name: "Dart", icon: <SiDart /> },
+        { name: "Java", icon: <SiOpenjdk /> },
+        { name: "Kotlin", icon: <SiKotlin /> },
+        { name: "Python", icon: <SiPython /> },
+        { name: "HTML", icon: <SiHtml5 /> },
+        { name: "CSS", icon: <SiCss /> },
+        { name: "PHP", icon: <SiPhp /> },
+        { name: "JavaScript", icon: <SiJavascript /> },
+        { name: "React", icon: <SiReact /> },
       ],
     },
+
     {
+      number: "02",
       title: "Backend & Database",
-      description: "Connecting applications with reliable backend services.",
+      description:
+        "Services and technologies I use to connect applications with data and APIs.",
       skills: [
-        { name: "SQL", icon: "▣" },
-        { name: "Firebase", icon: "🔥" },
-        { name: "REST API", icon: "↔" },
+        { name: "SQL", icon: <SiMysql /> },
+        { name: "Firebase", icon: <SiFirebase /> },
+        { name: "REST API", icon: <FaServer /> },
+        { name: "Supabase", icon: <SiSupabase /> },
       ],
     },
+
     {
+      number: "03",
       title: "Tools & Design",
-      description: "Tools I use to build, design and manage projects.",
+      description:
+        "Tools I use to design, manage and collaborate on digital projects.",
       skills: [
-        { name: "Git", icon: "◆" },
-        { name: "GitHub", icon: "◉" },
-        { name: "Figma", icon: "◈" },
-        { name: "Microsoft Office", icon: "▦" },
-        { name: "Google Workspace", icon: "G" },
+        { name: "Git", icon: <SiGit /> },
+        { name: "GitHub", icon: <SiGithub /> },
+        { name: "Figma", icon: <SiFigma /> },
+        { name: "Microsoft Office", icon: <FaMicrosoft /> },
+        { name: "Google Workspace", icon: <SiGoogle /> },
       ],
     },
+
     {
+      number: "04",
       title: "Infrastructure",
-      description: "Networking, servers and infrastructure management.",
+      description:
+        "Networking, servers and infrastructure technologies I have worked with.",
       skills: [
-        { name: "TCP/IP", icon: "⌁" },
-        { name: "Router & Switch", icon: "▤" },
-        { name: "DNS", icon: "⌘" },
-        { name: "VPS", icon: "▥" },
-        { name: "Linux / Debian", icon: "◒" },
-        { name: "Nginx", icon: "N" },
-        { name: "Virtual Machine", icon: "▧" },
+        { name: "TCP/IP", icon: <FaNetworkWired /> },
+        { name: "Router & Switch", icon: <FaNetworkWired /> },
+        { name: "DNS", icon: <FaNetworkWired /> },
+        { name: "VPS", icon: <FaServer /> },
+        { name: "Linux / Debian", icon: <SiLinux /> },
+        { name: "Nginx", icon: <SiNginx /> },
+        { name: "Virtual Machine", icon: <FaWindows /> },
       ],
     },
   ];
@@ -57,8 +97,8 @@ function Skills() {
       <div className="skills-container">
 
         <div className="skills-intro">
-          <div>
-            
+          <div className="skills-intro-title">
+            <p className="skills-label">SKILLS & TECHNOLOGIES</p>
 
             <h2>
               Tools I use to
@@ -67,7 +107,7 @@ function Skills() {
             </h2>
           </div>
 
-          <p>
+          <p className="skills-intro-description">
             A combination of software development, backend,
             UI/UX design, networking and infrastructure skills
             that I use throughout my projects.
@@ -101,11 +141,11 @@ function Skills() {
                         {skill.icon}
                       </div>
 
-                      <span>{skill.name}</span>
-
-                      <span className="tech-arrow">
-                        ↗
+                      <span className="tech-name">
+                        {skill.name}
                       </span>
+
+                      <span className="tech-arrow">↗</span>
 
                     </div>
                   ))}

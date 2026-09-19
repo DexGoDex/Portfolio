@@ -9,7 +9,7 @@ import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Education from "./components/Education";
 import Certifications from "./components/Certifications";
-
+import Design from "./components/Design";
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
         <Education />
         <Skills />
         <Projects />
+        <Design/>
         <Experience />
         <Certifications />
         <Contact />
