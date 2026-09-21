@@ -30,7 +30,7 @@ import {
 function Skills() {
   const categories = [
     {
-      number: "01",
+      
       title: "Development",
       description:
         "Languages and frameworks I use to build applications and digital experiences.",
@@ -49,7 +49,7 @@ function Skills() {
     },
 
     {
-      number: "02",
+      
       title: "Backend & Database",
       description:
         "Services and technologies I use to connect applications with data and APIs.",
@@ -62,7 +62,7 @@ function Skills() {
     },
 
     {
-      number: "03",
+      
       title: "Tools & Design",
       description:
         "Tools I use to design, manage and collaborate on digital projects.",
@@ -76,7 +76,7 @@ function Skills() {
     },
 
     {
-      number: "04",
+     
       title: "Infrastructure",
       description:
         "Networking, servers and infrastructure technologies I have worked with.",

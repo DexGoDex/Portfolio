@@ -6,7 +6,7 @@ import BusIT from "../assets/BusIT.png";
 function Design() {
   const designs = [
     {
-      number: "01",
+      
       type: "UI/UX DESIGN",
       title: "E-Library Mobile App",
       description:
@@ -16,7 +16,7 @@ function Design() {
     },
 
     {
-      number: "02",
+      
       type: "UI/UX DESIGN",
       title: "Food Ordering Mobile App",
       description:
@@ -26,7 +26,6 @@ function Design() {
     },
 
     {
-      number: "03",
       type: "UI/UX DESIGN",
       title: "Mitra Pindah Website",
       description:
@@ -36,7 +35,7 @@ function Design() {
     },
 
     {
-      number: "04",
+      
       type: "UI/UX DESIGN",
       title: "Bus IT Ticket Booking App",
       description:
@@ -84,9 +83,7 @@ function Design() {
                   />
                 </div>
 
-                <span className="design-number">
-                  {design.number}
-                </span>
+               
               </div>
 
               {/* CONTENT */}
