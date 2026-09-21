@@ -1,7 +1,7 @@
 function Education() {
   const education = [
     {
-      date: "2022 — 2026",
+      date: "2021 — 2026",
       degree: "Bachelor of Software Engineering",
       school: "Universitas Bina Sarana Informatika",
       location: "Jakarta, Indonesia",
@@ -10,29 +10,29 @@ function Education() {
       achievement: "GPA 3.95 / 4.00",
     },
     {
-      date: "2018 — 2021",
+      date: "2017 — 2021",
       degree: "Computer and Network Engineering",
       school: "SMK Negeri 1 Jakarta",
       location: "Jakarta, Indonesia",
       description:
         "Focused on computer networks, system administration, networking infrastructure, and information technology fundamentals.",
     },
-    {
-      date: "2015 — 2018",
-      degree: "Junior High School",
-      school: "SMP Negeri 216 Jakarta",
-      location: "Jakarta, Indonesia",
-      description:
-        "Completed junior secondary education and developed a strong foundation in general academic studies.",
-    },
-    {
-      date: "2009 — 2015",
-      degree: "Elementary School",
-      school: "SD Negeri Kenari 08",
-      location: "Jakarta, Indonesia",
-      description:
-        "Completed elementary education and built fundamental academic and learning skills.",
-    },
+    // {
+    //   date: "2015 — 2018",
+    //   degree: "Junior High School",
+    //   school: "SMP Negeri 216 Jakarta",
+    //   location: "Jakarta, Indonesia",
+    //   description:
+    //     "Completed junior secondary education and developed a strong foundation in general academic studies.",
+    // },
+    // {
+    //   date: "2009 — 2015",
+    //   degree: "Elementary School",
+    //   school: "SD Negeri Kenari 08",
+    //   location: "Jakarta, Indonesia",
+    //   description:
+    //     "Completed elementary education and built fundamental academic and learning skills.",
+    // },
   ];
 
   return (
