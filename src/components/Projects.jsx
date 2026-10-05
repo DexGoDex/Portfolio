@@ -1,9 +1,27 @@
 import kwikApp from "../assets/kwikApp.png";
 import InventoryManagementSystem from "../assets/InventoryManagementSystem.png";
 import VocalLavida from "../assets/VocalLavida.png";
+import MainBersamaGengs from "../assets/mainbersamagegs.png";
 
 function Projects() {
   const projects = [
+    {
+  type: "WEB APPLICATION",
+  title: "Main Bersama Gengs",
+  description:
+    "A community website for Bloxburg players to connect, share, and participate in community activities.",
+  details:
+    "Designed to introduce the Main Bersama Gengs community, showcase community activities and events, share memorable moments through a gallery, and provide an easy way for members to join the community.",
+  technologies: [
+    "React",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Vite"
+  ],
+  image: MainBersamaGengs,
+},
+
     {
       
       type: "MOBILE APPLICATION",
@@ -84,18 +102,21 @@ function Projects() {
           {projects.map((project) => (
             <article className="project" key={project.number}>
               {/* IMAGE */}
-              <div className="project-image-wrapper">
-                <div className="project-image">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                  />
-                </div>
+             <div className="project-image-wrapper">
+  <div
+    className={`project-image ${
+      project.type === "MOBILE APPLICATION"
+        ? "project-image-mobile"
+        : "project-image-web"
+    }`}
+  >
+    <img
+      src={project.image}
+      alt={project.title}
+    />
+  </div>
 
-                <span className="project-number">
-                  {project.number}
-                </span>
-              </div>
+</div>
 
               {/* CONTENT */}
               <div className="project-info">

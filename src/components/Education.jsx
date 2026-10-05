@@ -17,22 +17,7 @@ function Education() {
       description:
         "Focused on computer networks, system administration, networking infrastructure, and information technology fundamentals.",
     },
-    // {
-    //   date: "2015 — 2018",
-    //   degree: "Junior High School",
-    //   school: "SMP Negeri 216 Jakarta",
-    //   location: "Jakarta, Indonesia",
-    //   description:
-    //     "Completed junior secondary education and developed a strong foundation in general academic studies.",
-    // },
-    // {
-    //   date: "2009 — 2015",
-    //   degree: "Elementary School",
-    //   school: "SD Negeri Kenari 08",
-    //   location: "Jakarta, Indonesia",
-    //   description:
-    //     "Completed elementary education and built fundamental academic and learning skills.",
-    // },
+    
   ];
 
   return (
